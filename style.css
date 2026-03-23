@@ -673,3 +673,23 @@ header .fa-bars{
     font-size: 3rem;
   }
 }
+
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #333;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.popup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
